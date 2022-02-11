@@ -6,6 +6,7 @@ $(document).ready(function () {
     loop: true,
     margin: 0,
     nav: true,
+    autoplay: true,
     dots: false, // hide the dots
     items: 1, // show only one slide
     smartSpeed: 1000,
@@ -31,34 +32,11 @@ $(document).ready(function () {
 
 // END COUNTER UP
 
-// START LAUNCH
-
-// Initiate a countdown
-// var countDownDate = new Date("Feb 15, 2022 00:00:00").getTime();
-// var x = setInterval(function () {
-//   var now = new Date().getTime();
-//   var dist = countDownDate - now;
-
-//   var days = Math.floor(dist / (1000 * 60 * 60 * 24));
-//   var hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   var minutes = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
-//   var seconds = Math.floor((dist % (1000 * 60)) / 1000);
-
-//   document.getElementById("launch").innerHTML =
-//     days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-//   if (dist < 0) {
-//     clearInterval(x);
-//     document.getElementById("launch").innerHTML = "EXPIRED";
-//   }
-// }, 1000);
-
-// END LAUNCH
-
 // START SLICK CAROUSEL
 
 $(".slider").slick({
   centerMode: true,
+  autoplay: true,
   slidesToShow: 3,
   responsive: [
     {
@@ -84,7 +62,6 @@ $(".slider").slick({
 });
 
 // END SLICK CAROUSEL
-
 
 // START YEAR CHANGER
 
